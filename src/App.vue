@@ -8,7 +8,7 @@
         <div class="item-icon"><span class="icon"></span></div>
         <div v-if="item.icon && item.icon.length > 0" class="content-icon">
           <img
-            :src="'/src/assets/' + item.icon + '.svg'"
+            :src="'./assets/' + item.icon + '.svg'"
             :alt="item.icon"
             style="width: 16px; height: 16px"
           />
@@ -17,10 +17,10 @@
       </div>
     </div>
     <!-- 在线简历二维码 -->
-    <div v-if="online" class="online-resume">
-      <img src="/src/assets/online-resume-QrCode.png" alt="QrCode" class="online-resume-QrCode" />
+    <a v-if="!online" class="online-resume" :href="onlineLink" target="_blank">
+      <img src="./assets/online-resume-QrCode.png" alt="QrCode" class="online-resume-QrCode" />
       <span style="font-size: 12px">扫码查看在线简历</span>
-    </div>
+    </a>
 
     <!-- 简历分类 -->
     <!-- 分类标题：专业技能 -->
@@ -84,7 +84,7 @@
             class="code-link"
           >
             <img
-              src="/src/assets/link.svg"
+              src="./assets/link.svg"
               alt="link"
               style="margin-right: 4px; width: 16px; height: 16px"
             />
@@ -92,7 +92,7 @@
           </a>
           <a :href="item.sourceCodeLink" target="_blank" class="code-link">
             <img
-              src="/src/assets/github.svg"
+              src="./assets/github.svg"
               alt="github"
               style="margin-right: 4px; width: 16px; height: 16px"
             />
@@ -119,6 +119,7 @@ export default {
     return {
       online: true, // 是否为在线版本
       // online: false, // 是否为在线版本
+      onlineLink: 'https://mairuihong.github.io/my-online-resume/dist/',
       title: '麦锐鸿 - 前端开发工程师',
       // 个人信息
       introduce: [
@@ -200,7 +201,7 @@ export default {
             'Vue2 + TypeScript 开发的纯前端简易记账项目，包括记账、明细、统计三个主页面，用于日常消费记账。',
           sourceCodeLink: 'https://github.com/mairuihong/tuanzi-tally',
           previewLink: 'https://mairuihong.github.io/tuanzi-tally-website',
-          QrCodePath: '/src/assets/tuanzi-tally-qrcode.png'
+          QrCodePath: './assets/tuanzi-tally-qrcode.png'
         },
         {
           title: 'Wheat UI',
@@ -208,7 +209,7 @@ export default {
             '使用 Vite 搭建的 Vue3 + TypeScript 的简单 UI 框架，包括开关 Switch、按钮 Button、对话框 Dialog、导航栏 Nav 基础组件。',
           sourceCodeLink: 'https://github.com/mairuihong/wheat-ui',
           previewLink: 'https://mairuihong.github.io/wheat-ui-website/',
-          QrCodePath: '/src/assets/wheat-ui-qrcode.png'
+          QrCodePath: './assets/wheat-ui-qrcode.png'
         },
         {
           title: 'Paddy UI',
