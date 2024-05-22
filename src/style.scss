@@ -1,0 +1,152 @@
+.wrapper {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 28px;
+  color: #333;
+}
+
+.online-resume {
+  position: absolute;
+  top: 120px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .online-resume-QrCode {
+    width: 96px;
+    height: 96px;
+    background-color: #5974d4;
+  }
+}
+
+.content-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  row-gap: 4px;
+  color: #666;
+
+  .list-item {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+
+    .item-icon {
+      margin-right: 12px;
+      line-height: 20px;
+
+      .icon {
+        display: inline-block;
+        margin: auto 0;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #747474;
+      }
+    }
+
+    .content-icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+    }
+  }
+}
+
+.sort-title {
+  margin: 24px 0 16px 0;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #5974d4;
+  font-weight: 700;
+  font-size: 20px;
+  color: #5974d4;
+}
+
+.work-title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #333;
+}
+
+.tag-list {
+  display: flex;
+  width: 100%;
+  padding: 2px 0;
+  column-gap: 6px;
+
+  .tag {
+    padding: 0 6px;
+    border-radius: 4px;
+    word-break: keep-all;
+    color: #333;
+    background-color: #f3f3f3;
+  }
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  column-gap: 32px;
+
+  .project-content {
+    flex: 1;
+
+    .project-title {
+      margin-bottom: 4px;
+      font-weight: 700;
+      color: #333;
+    }
+
+    .project-introduce {
+      color: #666;
+    }
+
+    .code-link {
+      display: block;
+      margin-top: 4px;
+      color: #666;
+    }
+  }
+
+  .QrCode-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+
+    .QrCode {
+      width: 96px;
+      height: 96px;
+      background-color: aquamarine;
+    }
+
+    .text {
+      margin-top: 2px;
+      font-size: 12px;
+      color: #999;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .online-resume {
+    display: none;
+  }
+
+  .sort-title {
+    font-size: 16px;
+  }
+}
