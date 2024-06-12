@@ -201,7 +201,7 @@ export default {
           introduce:
             'Vue2 + TypeScript 开发的纯前端简易记账项目，包括记账、明细、统计三个主页面，用于日常消费记账。',
           sourceCodeLink: 'https://github.com/mairuihong/tuanzi-tally',
-          previewLink: 'https://tuanzi-tally-website.pages.dev/',
+          previewLink: 'https://mairuihong.github.io/tuanzi-tally-website/',
           QrCodePath: '/src/assets/tuanzi-tally-qrcode.png'
         },
         {
