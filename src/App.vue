@@ -142,7 +142,7 @@ export default {
       // 工作经历
       workExperienceList: [
         {
-          title: '广州新维智能科技有限公司（2022.5-2023.9）',
+          title: '广州新维智能科技有限公司（2022.5-2024.1）',
           tagList: ['后台管理系统', '小程序', 'APP', '移动端'],
           workPost: '前端开发工程师',
           contentList: [
