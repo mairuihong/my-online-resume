@@ -124,7 +124,7 @@ export default {
       title: '麦锐鸿 - 前端开发工程师',
       // 个人信息
       introduce: [
-        { icon: '', content: '麦锐鸿 | 男 | 1.5年工作经验' },
+        { icon: '', content: '麦锐鸿 | 男 | 2年工作经验' },
         { icon: '', content: '五邑大学 | 本科 | CET-4' },
         { icon: 'phone', content: '17520315098' },
         { icon: 'email', content: 'mairuihong1@foxmail.com' },
@@ -142,7 +142,7 @@ export default {
       // 工作经历
       workExperienceList: [
         {
-          title: '广州新维智能科技有限公司（2022.5-2024.1）',
+          title: '广州新维智能科技有限公司（2022.5-2024.4）',
           tagList: ['后台管理系统', '小程序', 'APP', '移动端'],
           workPost: '前端开发工程师',
           contentList: [
