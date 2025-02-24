@@ -8,7 +8,7 @@
         <div class="item-icon"><span class="icon"></span></div>
         <div v-if="item.icon && item.icon.length > 0" class="content-icon">
           <img
-            :src="'/src/assets/' + item.icon + '.svg'"
+            :src="'./assets/' + item.icon + '.svg'"
             :alt="item.icon"
             style="width: 16px; height: 16px"
           />
@@ -16,9 +16,12 @@
         <div>{{ item.content }}</div>
       </div>
     </div>
+    <!-- 证件照 -->
+    <img src="./assets/photo.jpg" alt="证件照" class="my-photo" />
+
     <!-- 在线简历二维码 -->
     <a v-if="!online" class="online-resume" :href="onlineLink" target="_blank">
-      <img src="/src/assets/online-resume-QrCode.png" alt="QrCode" class="online-resume-QrCode" />
+      <img src="./assets/online-resume-QrCode.png" alt="QrCode" class="online-resume-QrCode" />
       <span style="font-size: 12px">扫码查看在线简历</span>
     </a>
 
@@ -84,7 +87,7 @@
             class="code-link"
           >
             <img
-              src="/src/assets/link.svg"
+              src="./assets/link.svg"
               alt="link"
               style="margin-right: 4px; width: 16px; height: 16px"
             />
@@ -92,7 +95,7 @@
           </a>
           <a :href="item.sourceCodeLink" target="_blank" class="code-link">
             <img
-              src="/src/assets/github.svg"
+              src="./assets/github.svg"
               alt="github"
               style="margin-right: 4px; width: 16px; height: 16px"
             />
@@ -124,7 +127,7 @@ export default {
       title: '麦锐鸿 - 前端开发工程师',
       // 个人信息
       introduce: [
-        { icon: '', content: '麦锐鸿 | 男 | 2年工作经验' },
+        { icon: '', content: '麦锐鸿 | 男 | 1.5年工作经验' },
         { icon: '', content: '五邑大学 | 本科 | CET-4' },
         { icon: 'phone', content: '17520315098' },
         { icon: 'email', content: 'mairuihong1@foxmail.com' },
@@ -142,7 +145,7 @@ export default {
       // 工作经历
       workExperienceList: [
         {
-          title: '广州新维智能科技有限公司（2022.5-2024.4）',
+          title: '广州新维智能科技有限公司（2022.5 - 2023.9）',
           tagList: ['后台管理系统', '小程序', 'APP', '移动端'],
           workPost: '前端开发工程师',
           contentList: [
@@ -202,7 +205,7 @@ export default {
             'Vue2 + TypeScript 开发的纯前端简易记账项目，包括记账、明细、统计三个主页面，用于日常消费记账。',
           sourceCodeLink: 'https://github.com/mairuihong/tuanzi-tally',
           previewLink: 'https://mairuihong.github.io/tuanzi-tally-website/',
-          QrCodePath: '/src/assets/tuanzi-tally-qrcode.png'
+          QrCodePath: './assets/tuanzi-tally-qrcode.png'
         },
         {
           title: 'Wheat UI',
@@ -210,7 +213,7 @@ export default {
             '使用 Vite 搭建的 Vue3 + TypeScript 的简单 UI 框架，包括开关 Switch、按钮 Button、对话框 Dialog、导航栏 Nav 基础组件。',
           sourceCodeLink: 'https://github.com/mairuihong/wheat-ui',
           previewLink: 'https://wheat-ui-website.pages.dev/',
-          QrCodePath: '/src/assets/wheat-ui-qrcode.png'
+          QrCodePath: './assets/wheat-ui-qrcode.png'
         },
         {
           title: 'Paddy UI',

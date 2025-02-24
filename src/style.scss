@@ -9,9 +9,17 @@
   color: #333;
 }
 
+.my-photo {
+  position: absolute;
+  top: 90px;
+  right: 50px;
+  width: 100px;
+  height: 140px;
+}
+
 .online-resume {
   position: absolute;
-  top: 120px;
+  top: 300px;
   right: 50px;
   display: flex;
   flex-direction: column;
